@@ -1,0 +1,45 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.getscreen()
+
+t.write("RG", align="center", font=("Georgia", 30, "normal"))  # Increased font size to 30
+
+t.right(90)
+t.up()
+t.forward(50)  # Increased forward distance to 50
+t.down()
+t.left(90)
+t.width(3)  # Increased pen width to 3
+t.circle(70)  # Increased circle radius to 70
+
+t.right(90)
+t.up()
+t.forward(35)  # Increased forward distance to 35
+t.right(90)
+t.forward(80)  # Increased forward distance to 80
+t.down()
+t.right(180)
+for i in range(8):
+    t.forward(150)  # Increased forward distance to 150
+    t.left(72)
+    t.right(36)
+
+t.up()
+t.forward(300)  # Increased forward distance to 300
+t.left(90)
+t.down()
+for i in range(2):
+    t.forward(300)  # Increased forward distance to 300
+    t.left(90)
+    t.forward(600)  # Increased forward distance to 600
+    t.left(90)
+
+t.up()
+t.home()
+t.left(90)
+t.forward(100)  # Increased forward distance to 100
+t.hideturtle()
+
+input()
+turtle.done()
